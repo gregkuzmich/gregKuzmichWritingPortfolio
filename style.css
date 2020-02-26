@@ -3,6 +3,13 @@ html{
 	overflow-y: scroll;
 }
 
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -300,6 +307,10 @@ header nav{
 	margin: 20px;
 }
 
+.localAdCampaignExplanation span{
+	color: #FF0000;
+}
+
 .blundstoneAd span{
 	color: #FF0000;
 }
@@ -509,6 +520,7 @@ header nav{
   	margin: 30px;
 }
 
+
 @media only screen and (max-width: 100px) {
 	.blundstoneFour {
 		margin: 10px;
@@ -521,7 +533,7 @@ header nav{
   	align-items: center;
   	border: 2px solid black;
   	width: 50%;
-  	height: 50vh;
+  	height: 60%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -538,7 +550,7 @@ header nav{
 
 .adImage{
 	background: url(assets/Blundstone-Winter-Black-566_0002_1024x1024.jpg);
-	height: 50vh;
+	height: 65vh;
   	width: 50%;
   	background-repeat: no-repeat;
   	background-position: center;
@@ -549,6 +561,17 @@ header nav{
 @media only screen and (max-width: 900px) {
 	.adImage {
 		display: none;
+		text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.adText{
+		background: #fff;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 
@@ -872,6 +895,53 @@ header nav{
 	}
 } 
 
+/*Febreeze Styling*/
+
+.febreezeSection{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.febreezeSection h3{
+	margin: 50px 15px 20px 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 5rem;
+	color: #fff;
+}
+
+.febreezeSection h4{
+	margin: 0 15px 50px 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+
+.fiveAlarmChili, .steelCutOats, .tikaMasala{
+	background: #129dd7; 
+	width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+	.fiveAlarmChili, .steelCutOats, .tikaMasala {
+		width: 90%;
+	}
+}
+
+.febreezeSection .febrezeExtraTagLine{
+	margin: 5px 15px 5px 15px;
+}
+
+.febreezeLogo{
+	background: url(assets/febreze-logo.png);
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+  	height: 10vh;
+}
+
 footer{
 	background: #FCFFDB;
 	padding: 0;
@@ -879,6 +949,21 @@ footer{
 	display: flex;
 	border-top: 2px solid black;
 	justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+	footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.footerHeadline, .footerContact{
+		width: 90%;
+	}
 }
 
 .footerHeadline{
@@ -892,6 +977,12 @@ footer{
 	font-size: 2rem;
 	font-family: "Roboto Slab", serif;
 	font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+	.footerContact{
+		padding: 10px 0px 10px 15px;
+	}
 }
 
 .about h3{
@@ -918,6 +1009,6 @@ footer{
 
 @media only screen and (max-width: 768px) {
 	.contact h3{
-		font-size: 2rem;
+		font-size: 4rem;
 	}
 }
