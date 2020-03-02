@@ -536,15 +536,9 @@ header nav{
   	height: 60%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 430px) {
 	.blundstoneAdFour {
-		width: 100%;
-		border: 2px solid black;
-		background: url(assets/Blundstone-Winter-Black-566_0002_1024x1024.jpg);
-		height: 70vh;
-		background-repeat: no-repeat;
-	  	background-position: center;
-	  	background-size: contain;
+		display: none;
 	}
 }
 
@@ -603,7 +597,7 @@ header nav{
 	display: flex;
 	justify-content: center;
   	align-items: center;
-  	margin-top: 35px;
+  	margin: 10px;
 }
 
 .blundstoneAdFour a{
